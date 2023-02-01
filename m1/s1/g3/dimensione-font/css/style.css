@@ -1,0 +1,37 @@
+/*Posso modificare la dimensione assoluta di tutti i testi del body*/
+
+@font-face {/*si possono creare dei font personalizzati, assegnandogli un nome con "fant-family" e incollando l'url del font in "src"*/
+    font-family: FontIpotetico;
+    src: url(indirizzo-del-font.otf), format(inserire-il-formato-del-font)
+         url(indirizzo-del-font.ttf) format(inserire-il-secondo-formato-del-font);
+}
+
+
+
+:root{/*modificando la dimensione dell'elemento root (radice), andrò a cambiare la dimensione base del documento*/
+    font-size: 25px;
+}
+
+#t1{/*la dimensione base della radice del testo è di 16px*/
+    /*1rem è equivalente alla dimensione base del documento*/
+    font-size: 1rem;
+    color: #0ff;
+}
+
+#t2{
+    font-size: 16px;
+    color: rgb(55, 66, 70);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#parent{
+    font-size: 50px;
+}
+
+#t4{/*em eredita la dimensione del tag parent (genitore)*/
+    font-size: 1em;
+}
+

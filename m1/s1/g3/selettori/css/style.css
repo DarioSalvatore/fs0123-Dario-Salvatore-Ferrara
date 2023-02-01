@@ -1,0 +1,35 @@
+#rosso{
+    background-color: red;
+}
+
+#verde{
+    background-color: green;
+}
+
+#blu{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+#conflitti .conflitti{/* 100 + 10 = 110 */
+    background-color: pink;
+}
+
+#conflitti div{/*100 + 1 = 101*/
+    background-color: aquamarine;
+}
+
+#conflitti div{/* vince perchè si trova più in basso */
+    background-color: brown;
+}
+
+#conflitti #rosa{
+    background-color: pink;
+}
+
+/* <style> inserito in-line ha valore 1000 */
+
+/* "!important" vince su tutto. */
