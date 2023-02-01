@@ -1,0 +1,53 @@
+
+
+
+
+
+header{
+    text-align: center;   
+}
+
+#nav{
+    color: #004d4d;
+}
+
+#main{
+    margin: 0 auto;
+    width: 500px;
+}
+
+#titolo1{
+    text-align: center;
+}
+
+#paragrafo1{
+    text-align: center;
+}
+
+#immagine-focaccia{
+    border-radius: 2%;
+    
+}
+
+#grigio{
+    color: gray;
+}
+
+#testa{
+    text-align: center;
+}
+
+#titolo1{
+    margin: 0 auto;
+    width: 05;
+}
+
+.titolo2{
+    border-bottom: 5 solid;
+    border-color: aqua;
+}
+
+footer{
+    margin: 0 auto;
+    width: 450px;
+}
