@@ -1,0 +1,30 @@
+img{
+    max-width: 100%; /*le immagini non andranno oltre la grandezza del contenitore*/
+}
+
+.quadrato{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+#q1{
+    background-image: url(../img/images.png);
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#q2{
+    background-image: url(../img/images.png), url(../img/images.png);
+    background-size: 100px auto;
+    background-repeat: no-repeat, repeat-y;
+    background-position: right top, left bottom;
+}
+
+#q3{
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    color: red;
+}

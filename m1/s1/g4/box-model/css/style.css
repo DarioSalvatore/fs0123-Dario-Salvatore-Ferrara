@@ -1,0 +1,35 @@
+.quadrato{ /*gli elementi in-line non posssono essere modificati con "width" e "height"*/
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+    display: block;
+    overflow: auto;
+}
+
+.max{
+    max-width: 900px;
+    background-color: bisque;
+}
+
+.padding{
+    padding: 15px;
+    /*padding-top: (sopra )
+    padding-right: (destra )
+    padding-bottom: (sotto )
+    padding-left: (sinistra)*/
+
+    box-sizing: border-box; /*faccio si che il pudding sia ritagliato all'interno*/
+}
+
+/*area del border*/
+
+.border{
+    border: 5px solid black;
+    border-top-left-radius: 100%;
+}
+
+/*area del margin*/
+
+.margin{
+    margin: 100px;
+}
