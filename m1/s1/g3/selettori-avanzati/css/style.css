@@ -1,0 +1,24 @@
+
+
+
+section > span{ /*seleziono soltanto gli elementi span figli diretti di "section",
+                 se avessi inserito "section span", avrei operato su tutti gli span all'interno di "section"*/
+    text-decoration: line-through;
+}
+
+section + small{ /* in questo modo specifico di operare su tutti gli "small" che vengono subito dopo una "section" */
+    font: bold;
+}
+
+section ~ small{ /* tutti gli small dopo una section  */
+    color: red;
+}
+
+/* la pseudo classe si indica con ": " */
+
+#p-illuminato:hover{ /*effetti :hover*/
+    background-color: white;
+}
+
+/*pseudo elementi si indicano con "::"*/
+
