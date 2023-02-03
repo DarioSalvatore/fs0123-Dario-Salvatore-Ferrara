@@ -1,0 +1,152 @@
+/* Your styles here */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    
+}
+
+#testa{
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+#img-testa{
+    max-width: 500px;
+    width: 100px;
+    margin: auto;
+    
+}
+
+/*modifiche sul main*/
+
+#principale{
+    text-align: center;
+}
+
+h1{
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    line-height: 1.0;
+}
+
+h1, h4{
+    color: #25a2c3;
+    font-weight: bolder;
+}
+
+#sfondo{
+    margin: 0;
+    background-image: url(../images/banner.jpg);
+    background-size: 100% auto;
+    padding-bottom: 60px;
+    
+    
+}
+
+.intro{
+    padding-bottom: 20px;
+}
+
+#partiamo{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: #f04c2f;
+    border-radius: 3%;
+}
+
+#pregi{
+    padding-top: 50px;
+}
+
+.fix{
+    padding-bottom: 15px;
+}
+
+.text1{
+    padding-bottom: 30px;
+}
+
+#img1{
+    width: 250px;
+    border-radius: 50%;
+}
+
+.fix1{
+    padding-top: 20px;
+}
+
+.text2{
+    padding-top: 15px;
+}
+
+#rosso{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#bimbo-rosso{
+    background-color: red;;
+}
+
+.rosso-titolo{
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.rosso-testo{
+    padding-bottom: 35px;
+    font-weight: lighter;
+    font-size: small;
+}
+
+#mario{
+    padding-bottom: 3px;
+    font-size: large;
+}
+
+.ripetuta{
+    width: 92%;
+    text-align: center;
+    margin-left: 14px;
+    border: 1px solid;
+    border-style: solid;
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+}
+
+#img2{
+    border: 20px;
+}
+
+.p-ripetuto{
+    font-size: small;
+}
+
+.footer{
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    background-color: #25a2c3;
+}
+
+a, link{
+    color: white;
+    text-decoration: none;
+}
+
+#copy{
+    border-top: 1px solid white;
+}
