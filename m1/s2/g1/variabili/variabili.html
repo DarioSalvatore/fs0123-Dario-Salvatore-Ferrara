@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+
+        var numero = 5;
+
+
+        /*Javascript utilizza una notazione di tipo "camelCase" (per notazioni con più parole, ogni nuova parola deve iniziare con la lettera maiuscola)*/
+        var nomeUtente = 'Mario';
+
+        console.log(numero, nomeUtente);
+
+        numero = 8;
+
+        console.log(numero)
+        
+        /*javascript è debolmente tipizzato, il che vuol dire che non devo specificare il tipo di dato inserito in una variabile*/
+
+        
+        /*
+        tipi di dato:
+        
+        string => "" oppure ''
+        number => 5 (numero)
+        boolean => true oppure false
+        array => []
+        object => {}
+
+        */
+
+       var a = 2;
+       var b = 3;
+       var c = a + b;
+
+       console.log(c, a + b)
+
+       /*
+       operatori aritmetici:
+
+        + => somma;
+        / => divisione;
+        * => moltiplicazione;
+        - => sottrazione;
+
+        */
+
+        var nome = 'Mario';
+        var saluto = 'Ciao';
+
+        console.log(nome + ' ' + saluto);
+
+        /*
+        ricordarsi sempre di controllare che un testo ci siano le virgolette, altrimenti per javascript il testo sarà considerato come una variabile
+        */
+
+        /*
+        conversione tipi di dato
+        parkour (accrobazie di javascript)
+        */
+
+        var num = 10;
+        var strNum = '10';
+
+        console.log(num + strNum) //il numero si converte in stringa, avviene un concatenamento
+
+        console.log(num * strNum) //La stringa viene convertita in numero, avremo una moltiplicazione (* non permette un concatenamento)
+
+        console.log(num * '10a')//restituisce NaN (not a number) perchè la stringa contiene anche una lettera 
+
+        console.log( typeof num)//restituisce il valore della variabile che viene assegnata a typeoff
+
+        
+
+
+    </script>
+    
+</body>
+</html>
