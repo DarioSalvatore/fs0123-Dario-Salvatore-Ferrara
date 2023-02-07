@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //operatori di assegnazione
+        let a = 2;
+        let b = 4;
+
+        console.log(b)//4
+        b = 6;//perdo il vecchio valore
+        console.log(b)//6
+
+        a += 2;//2 + 2 = 4
+        console.log(a)//4
+        a <= 2;//4 - 2 = 2
+        console.log(a)//2
+
+        let c = '<div>Ciao'
+
+            c += '</div>';//aggiungo la chiusura del div
+            //( oppure ) c = c + '<div>;
+
+            console.log(c)//<div>Ciao</div>
+
+        //operatori logici e di comparazione
+
+        let anni = 30
+
+        console.log(30 < 18); //false
+        console.log(30 > 18); //true
+        console.log(18 > 18); //false, 18 è uguale a 18, non superiore
+        console.log(18 < 18); //false, 18 è uguale a 18, non inferiore
+        console.log(18 <= 18); //true, se è uguale a 18 o superiore
+        console.log(18 >= 18); //true, se è uguale a 18 o inferiore
+        console.log(18 == 18); //true, è uguale
+        console.log(18 != 18); //falso perchè è uguale
+
+        console.log(anni == '30'); //conversione e comparazione, viene valutato il dato e non il tipo di dato
+        console.log(anni === '30'); // vengono comparati valore e il tipo di dato
+
+        /*
+          altra possibilità: !==
+          devono essere differenti il tipo o il valore
+        */
+
+        console.log(anni >= 18 && anni <= 110)
+        console.log(anni >= 18 || anni <= 110)
+
+        console.log(!true) //inverte il risultato di qualunque comparazione
+
+        console.log(!(anni >= 18 && anni <= 110))
+
+
+        //operatore ternario
+
+        let controllo = anni >= 18 ? 'Sei maggiorenne' : 'sei minorenne' //se 'anni' è maggiore o uguale a 18 'sei maggiorenne' : (else) 'sei minorenne'
+        console.log(controllo) //sei maggiorenne
+
+        
+
+    </script>
+
+</body>
+</html>
