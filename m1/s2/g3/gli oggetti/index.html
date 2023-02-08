@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //- Oggetti:
+
+        //variabile{"proprietà" ": (assegnazione)" }
+        let obj = {}//si definisce così
+
+        let pizza = {
+            gusto:'Margherita',
+            prezzo:5,
+            mostraPrezzo: function(){
+                console.log(`La pizza ${this.gusto} costa ${this.prezzo}euro`)
+            }
+        }
+
+        console.table(pizza)
+        document.write(pizza.gusto)
+
+        //lettura di una proprietà
+
+        console.log(pizza.gusto)
+        console.log(pizza.prezzo)
+
+        //scrittura
+
+        pizza.gusto = 'Diavola'
+        console.log(pizza.gusto) //dopo il punto a sinistra quasi sempre c'è un oggetto
+
+        //utilizzo dei metodi
+
+        pizza.mostraPrezzo()
+
+        //mostraPrezzo() come funzione non esiste poichè fa parte di un oggetto
+
+
+
+
+    </script>
+
+</body>
+</html>

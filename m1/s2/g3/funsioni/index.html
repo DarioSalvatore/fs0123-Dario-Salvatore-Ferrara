@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        saluto();
+
+        function saluto(){ //azione della funzione
+            console.log('ciao');
+        }
+
+        saluto(); //lancio della funzione (può essere prima o dopo la definizione della funzione)
+
+        function restituisciSaluto(){
+            return 'Benvenuto'; //restituisce "ciao" (stringa) nel momento in cui viene lanciata la funzione
+            //può essere inserito solo return alla fine della funzione, perchè questo quando verrà eseguito, bloccherà la funzione stessa
+        }
+
+        console.log(restituisciSaluto())
+
+        let stringa = restituisciSaluto(); //riceve un dato
+        console.log(stringa)
+
+        //scope nelle funzioni
+
+        let a = 0;
+
+        function scope(){
+            console.log('let a = ' + a); //a è ragiungibile perchè globale
+            var b = 100;
+        }
+
+        scope(); //console.log(b), b nasce dentro la funzione e non è ragiungibile dall'esterno
+
+
+
+        //funzioni parametriche
+
+        function somma(a,b){
+            console.log(a + b);
+        }
+
+        somma(2,6) //le variebili vengono definite all'interno della funzione e esestono solo dentro essa
+        somma(3,11)
+
+        function restituisci_somma(a,b){
+            return a + b;
+        }
+
+        console.log(restituisci_somma(3,9));
+
+        //closure
+
+        function funzione1(){
+            let a = 100;
+
+            function funzione2(){//non posso usarla fuori da funzione1
+                console.log(a)
+                let x = 3;
+                
+        } //x non è ragiungibile dall'esterno
+            funzione2()
+    }
+        funzione1()
+
+    </script>
+
+</body>
+</html>

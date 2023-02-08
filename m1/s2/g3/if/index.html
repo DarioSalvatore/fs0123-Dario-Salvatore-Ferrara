@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select id="frutto" onchange="scegliFrutto()">
+        <option value="">--scegli--</option>
+        <option value="mela">Mela</option>
+        <option value="pera">Pera</option>
+        <option value="ananas">Ananas</option>
+        <option value="mango">Mango</option>
+        <option value="kiwi">Kiwi</option>
+    </select>
+
+
+    <div id="messaggio"></div>
+    
+    <script>
+
+        //ci può essere per variabile, un solo "if", molteplici situazioni espresse con "else if" e un solo "else" che si scatena se tutti i casi elencati in precedenza risultano "false"
+
+        function scegliFrutto(){
+
+        let frutto = document.getElementById('frutto').value; //Se utilizzassi "inner.html" andrei a selezionare tutto il contenuto del tag "select" e sarebbe un errore, mentre con "value" selezionerò solo il campo selezionato dall'utente all'interno della selezione
+        console.log(frutto)
+        let messaggio = document.getElementById('messaggio')
+
+        if(frutto == 'mela'){
+            messaggio.textContent = 'Le mele costano 1euro al kg';
+        }else if(frutto == 'pera'){
+            messaggio.textContent = 'Le pere costano 0,90 euro al kg';
+        }else if(frutto == 'ananas' || frutto == 'mango'){
+            messaggio.textContent = frutto + ' costano 2euro alkg';
+        }else{
+            messaggio.textContent = frutto + ' Non è disponibile';
+        }
+    }
+    </script>
+
+</body>
+</html>

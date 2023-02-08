@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let arrOld = new Array(); //obsoleto
+
+        let arr = [];
+
+        let numeri = [1,2,3,4,5,6,50]
+        document.write(numeri) //gli array in javascript posso essere convertiti in stringa, formato csv
+
+        let dati = [
+            'stringa',
+            0,
+            true,
+            {},
+            []
+        ]
+
+        //-lettura
+        let pizza = ['margherita','diavola','4 formaggi'];
+
+        console.log(pizza)
+
+        console.log(pizza[0]) //il conteggio degli elementi di un array parte da 0 (margherita in questo caso)
+
+        let pizza2 = pizza[1]
+        console.log(pizza2);
+
+        //-scrittura
+
+        pizza[2] = 'Capricciosa'; //riassegnazione
+        console.log(pizza)
+
+        //attenzione: evitare i buchi
+
+        pizza[4] = 'marinara'; //è sconsigliato aggiungere una variabile all'array senza rispettare l'ordine degli elementi
+        console.log(pizza)
+
+        //aggiungere alla fine dell'array senza creare buchi
+        pizza.push('parigina');//"push" è una funzione utilizzabile solo su un array
+        console.log(pizza)
+
+        //riordinare
+
+        /*
+        attenzione sort non è adatto per riordinare i numeri;
+        riordina i numeri in senso alfabetico
+        */
+        let studenti = ['Mauro','Vittoria','Rebecca']
+        console.log(studenti)
+        studenti.sort()//riordina in modo alfabetico
+        console.log(studenti)
+        studenti.reverse()//riordina in modo inverso
+        console.log(studenti)
+
+        //riordinare i numeri
+        let numerati = ['1','20','100'];
+        numeri.sort(function(a,b){
+            return a - b;
+        })
+        console.log(numerati)
+
+
+        //-proprietà length
+        console.log(pizza.length)
+
+        console.log(pizza[pizza.length - 1]); //leggo l'ultimo elemento dell'array indicato
+
+        //è in comune con le stringhe
+        console.log('ciao'.length)//è comunque sbagliato dire che le stringhe sono array di caratteri
+
+
+        //-capire se è un array
+        Array.isArray(pizza);//restituisce valore booleano "true" se è un array
+        console.log(Array.isArray(pizza))
+
+
+
+
+        
+
+    </script>
+
+</body>
+</html>
