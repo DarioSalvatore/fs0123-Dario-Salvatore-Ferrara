@@ -70,6 +70,30 @@
     }
         funzione1()
 
+
+        /* Variabili che contengono funzioni*/
+        let fn = function(){
+            return('ok')
+        }
+
+        console.log(fn)//vedo il contenuto della funzione
+        console.log(fn())//eseguo la funzione nella console
+
+        
+        function A(x){
+            return function b(y){
+                return function c(z){
+                    return x + y + z;
+                }
+            }
+        }
+
+        console.log(A(2)(3)(7));
+
+        let h = A(2)
+        let g = h(3)
+        console.log(g(7))
+
     </script>
 
 </body>

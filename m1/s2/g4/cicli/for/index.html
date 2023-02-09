@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //con variabile incrementata
+        for(let i = 0; i<10; i++){//sintassi di for
+            document.write(i)
+        }
+        document.write('<hr>');
+
+        //con variabile decrementata
+        for(let i = 9; i >= 0; i--){
+            document.write(`<div> ${i} </div>`)//crea un <div> per ogni ciclo ripetuto
+        }
+        document.write('<hr>');
+
+        let pizze = ['Margherita','Diavola','Marinara','Mimosa']
+        for(let i = 0; i < pizze.length; i++){
+            document.write(`<div>${pizze[i]}</div>`)
+        }
+
+        document.write('<hr>');
+
+        //for of
+        pizze = ['Margherita','Diavola','Marinara','Mimosa']
+        for(let pizza of pizze){//per ogni pizza di pizze, scrivimi il valore di pizza
+            document.write(`<div>${pizza}</div>`);
+        }
+
+        document.write('<hr>');
+
+        for(let lettera of 'Testo'){ //divide le singole lettere del testo, scrive una lettera e va a capo
+            document.write(lettera + '<br>');
+        }
+
+        document.write('<hr>');
+
+        //for in
+        let margherita = {
+            gusto : 'Margherita',
+            prezzo : 5
+        }
+
+        for(let prop in margherita){ //per ogni proprietà all'interno dell'ogetto "margherita"
+           document.write(`<div>${prop} : ${margherita[prop]}</div>`)
+        }
+
+        document.write('<hr>');
+
+
+        
+
+
+    </script>
+
+</body>
+</html>

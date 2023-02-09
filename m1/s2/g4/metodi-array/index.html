@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //array.metodo(funzione "call-back"). la funzione "call-back" è una funzione che ferrà usata in un secondo momento da un altra funzione
+
+        //forEach
+        
+        let pizze = ['Margherita','Diavola','Marinara','Mimosa'];
+        //si usa quando serve effettuare una modifica ad ogni elemento dell'array
+        let pizzeDiv = pizze.map(function(valore){
+            return `<div>${valore}</div>`;
+
+        })
+        console.log(pizze)
+        console.log(pizzeDiv)
+
+        //serve a ciclare gli array
+        pizze.forEach(function(valore){
+
+            document.write(valore);
+
+        })
+
+
+        //Map
+        /*
+        let numeri = [1,2,3,4,5,6];
+        let numeriX2 = numeri.map(function(n){
+            return n * 2;
+        })
+
+        console.log(numeriX2);
+        */
+
+        //filter
+        let numeri = [1,2,3,4,5,6];
+        let numeriFiltrati = numeri.filter(function(n){
+            return n > 3
+        })
+        console.log(numeriFiltrati)
+
+        //find
+        let numeroTrovato = numeri.find(function(n){
+            return n > 3
+        })
+        console.log(numeroTrovato)
+
+        //reduce
+        let somma = numeri.reduce(function(p,c){
+            return p + c;
+        })
+        console.log(somma)
+
+
+        let numeroGrande = numeri.reduce(function(p,c){
+            if( p > c){
+                return p;
+            }else{
+                return c;
+            }
+        })
+        console.log(numeroGrande)
+
+        
+
+    </script>
+
+</body>
+</html>

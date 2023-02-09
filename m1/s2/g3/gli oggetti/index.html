@@ -45,6 +45,35 @@
 
 
 
+        //costruttore di oggetti
+        {
+
+            function Pizza(_gusto, _prezzo){
+                this.gusto = _gusto
+                this.prezzo =_prezzo;
+                this.mostraPrezzo = function(){ //la funzione diventa metodo.
+                console.log(`La pizza ${this.gusto} costa ${this.prezzo}euro`)
+            }
+            }
+
+            let Margherita = new Pizza('Margherita', 5);
+            let diavola = new Pizza('Diavola', 2);
+
+
+
+            console.log(Margherita)
+            console.log(diavola)
+
+            Margherita.mostraPrezzo()
+            diavola.mostraPrezzo()
+
+
+
+        }
+
+
+
+
     </script>
 
 </body>

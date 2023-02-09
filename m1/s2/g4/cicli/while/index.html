@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //il while 
+
+        let i = 0;
+        while (i < 10){//finchè i è inferiore a 10
+            document.write(i);//scrive a schermo il valore di I
+            i++; //condizione di uscita, inscrementa I di 1 a ogni cliclo
+        }//torna ripetere il ciclo finchè questo non è terminato
+
+        document.write('<br>il ciclo ha terminato le sue operazioni<br>');
+
+        //esempi con breack e continue
+
+        i = 0; //resetto la variabile a zero
+        while(i <= 5){
+
+            if(i == 2){
+                i++;
+                continue;
+            }
+            document.write(i);
+            i++;
+        }
+
+    </script>
+
+</body>
+</html>
