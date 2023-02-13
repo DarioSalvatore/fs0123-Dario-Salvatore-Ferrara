@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="ora"></div>
+
+    <script>
+
+        let adesso = new Date();//scrivo nella variabile un oggetto date, contenente le indo relative alla data e ora attuali
+
+        console.log(adesso)
+
+        // metodi per la lettura (get)
+
+        let year = adesso.getFullYear();
+        let month = adesso.getMonth();//i mesi vengono contati come gli array, quindi partono da 0
+        let weekday = adesso.getDay();//il numero del giorno della settimana (da 0 a 6), La settimana parte da domenica
+        let day = adesso.getDate();//il giorno del mese in forma di numero
+
+        console.log(year, month, weekday,day);
+
+        adesso.setDate(20);//il 20 del mese
+        adesso.setMonth(11);//qualora si superasse il numero 11(dicembre), anche l'anno viene spostato in avanti, 12 ad esempio è gennai dell'anno prossimo, la stessa cosa avviene in negativo, -1 è dicembre dell'anno precendente
+
+        console.log(adesso);
+
+
+        const options = { weekday: 'short', year: 'numeric', month:'long', day:'numeric'};
+        console.log(adesso.toLocaleDateString('it-IT',options));//riporta la data locale di SISTEMA
+
+        //creare date future
+
+        let now = new Date();
+
+        now.setMonth(now.getMonth() + 1);//ad un mese da oggi
+
+        console.log(now)
+
+        //per le date consultare la libreria 'moment js'
+
+        //eseguo una funzione 1 volta dopo 3 secondi
+        setTimeout(function(){
+            console.log(new Date())
+        },3000);
+
+        //eseguo una funzione all'infinito ogni secondo
+        setInterval(function(){
+
+            let tag = document.querySelector('#ora');
+
+            let orario = new Date().toLocaleDateString();
+
+            tag.innerText = orario;
+        },1000);
+
+
+        //cauntdown
+
+        let count = 10;
+
+        let timer = setInterval(function(){
+            count==
+            console.log(count);
+            if(count==0){
+                clearInterval(timer)
+            }
+            count--;
+        },1000)
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
