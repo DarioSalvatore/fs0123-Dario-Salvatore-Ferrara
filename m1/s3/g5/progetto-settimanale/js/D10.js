@@ -377,9 +377,9 @@ function newestMovie(movies) {
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
 function countMovies() {
-  let container = document.getElementById('#tredici')
   for (let i = 0; i < movies.length; i++) {
-    console.log(i)
+    let a = movies.length
+    console.log("ci sono " + a + " films")
   }
   
   
@@ -389,11 +389,10 @@ countMovies();
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
-
-function onlyTheYears() {
-  let anni = [];
-  for (let x of movies) {
-    anni.push(movies.Year);
+let anni = [];
+function onlyTheYears() {  
+  for (let i = 0; i < movies.length; i++) {
+    anni.push(movies[i].Year);
     }
   console.log(anni);
 }
@@ -402,10 +401,20 @@ onlyTheYears()
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
+let film = [];
+function onlyInLastMillennium (){
+  for(let i = 0; i < movies.length; i++)
+  if(movies[i].Year<2000){
+    film.push(movies[i].Year);
+  }
+  console.log(film);
+}
+onlyInLastMillennium();
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
+
 
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
